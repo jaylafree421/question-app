@@ -12,7 +12,10 @@ struct q3: View {
         var body: some View {
         NavigationStack {
             VStack(spacing:15){
-                Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
+                Image("iaa")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 Text("Isabella Aiona Abbott was the first person of color to become a Professor of Biology at what university?")
                     .font(.title)
                     .fontWeight(.bold)
